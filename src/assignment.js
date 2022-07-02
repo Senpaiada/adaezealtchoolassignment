@@ -16,6 +16,23 @@ const assignment = {};
 function sumOfNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
 }
+ //me being lost part 3
+
+let sum = 0;
+
+for(let i = 0; i < numbers.length; i++){
+
+sum += numbers[i]
+
+
+}
+
+console.log('Your sum is ' + sum);
+
+
+
+
+
 // assignment.sumOfNumbers = sumOfNumbers;
 
 /**
