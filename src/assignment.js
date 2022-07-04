@@ -15,25 +15,33 @@ const assignment = {};
  */
 function sumOfNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
-}
- //me being lost part 3
-
-let sum = 0;
-
-for(let i = 0; i < numbers.length; i++){
-
-sum += numbers[i]
+}                             
+     //solution
 
 
-}
-
-console.log('Your sum is ' + sum);
-
-
-
-
-
-// assignment.sumOfNumbers = sumOfNumbers;
+     let arr = [1, 2, 3, 4, 5, 6, 7];
+  
+     function sum(a){
+       if(a < 0){
+         return 0;
+       } else{
+         return arr[a] + sum(a-1)
+       }
+     }
+       
+     console.log( sum(4) );
+    
+     function anotherSum(){
+       let arr = [1, 2, 3, 4, 5, 6, 7];
+   
+       let sum = 0;
+   
+       for(let i=0; i<arr.length; i++){
+           sum += arr[i];
+       }
+       return sum;
+     }
+     console.log( anotherSum())
 
 /**
  * Challenge - 2
@@ -44,10 +52,29 @@ console.log('Your sum is ' + sum);
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
-}
-// assignment.countEvenNumbers = countEvenNumbers;
+
+ let anArray = [1,2,3,4,5,6,7];
+
+function countTwo(anArray) {
+
+   let sum = 0
+   for(let i = 0; i< anArray.length; i++){
+       if(anArray[i] % 2=== 0){
+           sum += anArray[i]
+       }
+   }
+    return sum;
+}   
+  console.log(countTwo(anArray))
+
+
+
+
+
+
+
+
+
 
 /**
  * Challenge - 3
